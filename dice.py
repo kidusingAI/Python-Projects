@@ -1,5 +1,4 @@
 import random
-# I know they look weird but idk thats my tutorial said so imma follow it
 dice_art = {
     1: ("┌─────────┐",
         "│         │",
@@ -32,8 +31,11 @@ dice_art = {
         "│  ●   ●  │",
         "└─────────┘")
 }
-value = random.randint(1,6)
-if input("Do you want to roll the dice(y/n)").lower() != 'y':
-  print("Thanks for looking at this project")
+num_dice = input("how many dice do you want")
+if not num_dice.isdigit:
+  print("Thats invalid")
 else:
-  print(dice_art.get(value))
+  for rolls in range(int(num_dice)):
+    value = random.randint(1,6)
+    print(" ")
+    print(dice_art.get(value))
