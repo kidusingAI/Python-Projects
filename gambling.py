@@ -1,5 +1,5 @@
 import random
-slot_choices = ['🍒']
+slot_choices = ['🍒', '🍉', '🍓', '🥭', '🍌']
 balance = 1000
 #Amountt of bet
 def bet():
